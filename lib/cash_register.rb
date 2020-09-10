@@ -36,12 +36,12 @@ class CashRegister
  
 
  def void_last_transaction
-   @all_transactions.pop
+   
         if items.empty?
             self.total = 0.0
             binding.pry
         else
-            self.total -= @all_transactions
+            self.total - @all_transactions.pop
         end
     end
 
