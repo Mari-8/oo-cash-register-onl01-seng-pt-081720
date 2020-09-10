@@ -40,7 +40,7 @@ class CashRegister
         if items.empty?
             self.total = 0.0
         else
-            self.total -= @last_transaction
+            self.total -= @all_transactions
         end
     end
 
