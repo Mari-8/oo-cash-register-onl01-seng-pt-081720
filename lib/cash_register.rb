@@ -16,7 +16,7 @@ class CashRegister
   end 
   
   def apply_discount 
-     floated = @discount.to_f
+     floated = @discount.to_f.split("")
      floated[0..-3]
      binding.pry
   end 
