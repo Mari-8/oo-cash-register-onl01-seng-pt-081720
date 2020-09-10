@@ -39,7 +39,7 @@ class CashRegister
    @items.pop
    self.total = @total - @last_transaction
    if @total < 0 
-     @total = 0.0 
+     self.total = 0.0 
      binding.pry
    end
   end
