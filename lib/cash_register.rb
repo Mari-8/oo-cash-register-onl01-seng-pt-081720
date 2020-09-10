@@ -15,7 +15,7 @@ class CashRegister
     @items = []
     i = 0
     if quantity > 1 
-      while i < quantity.length 
+      while i < quantity
         @items << title * quantity[i]
       end
       i += 1 
