@@ -40,7 +40,6 @@ class CashRegister
    self.total = @total - @last_transaction
    if @total < 0 
      self.total = 0.0 
-     binding.pry
    end
   end
   
