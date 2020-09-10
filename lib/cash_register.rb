@@ -14,7 +14,8 @@ class CashRegister
     @total
     i = quantity 
     until i == 0 do 
-    @items << 
+    @items << title 
+    
     end
   end 
   
