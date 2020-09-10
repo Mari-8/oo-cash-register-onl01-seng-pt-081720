@@ -1,12 +1,13 @@
 require 'pry'
 
 class CashRegister 
-  attr_accessor :discount, :total, :price, :quantity
+  attr_accessor :discount, :total, :price, :quantity, :last_transaction
   
   def initialize(discount = 0)
     @total = 0
     @items = []
-    @discount = discount 
+    @discount = discount
+    @last_transaction = nil
   end
   
   def add_item(title, price, quantity = 1) 
@@ -17,6 +18,7 @@ class CashRegister
     @items << title 
     i -= 1
     end
+    
   end 
   
   def apply_discount 
@@ -32,6 +34,8 @@ class CashRegister
    @items
  end
   
-  
+ def void_last_transaction 
+   
+ end
   
 end
