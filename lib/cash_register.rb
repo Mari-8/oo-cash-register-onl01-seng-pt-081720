@@ -40,7 +40,7 @@ class CashRegister
         if @items.empty?
             @total = 0.0
         else
-           @total = @total - @last_transaction.pop
+           @total = @total - @all_transactions.pop
         end
     end
 
