@@ -40,7 +40,7 @@ class CashRegister
    @items.pop
    binding.pry 
     
-   end
+   
  end
   
 end
