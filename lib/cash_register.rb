@@ -13,6 +13,7 @@ class CashRegister
     @total = @total + price * quantity
     @total
     i = quantity 
+    until i == 0 do 
     @items << 
     end
   end 
