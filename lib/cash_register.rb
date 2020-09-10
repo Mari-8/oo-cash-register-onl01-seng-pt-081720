@@ -43,7 +43,7 @@ class CashRegister
    else 
      @total 
    end
-   
+   binding.pry
 end 
 
 
