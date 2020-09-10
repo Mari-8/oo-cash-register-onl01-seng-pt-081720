@@ -41,7 +41,7 @@ class CashRegister
             self.total = 0.0
             binding.pry
         else
-            self.total - @all_transactions.pop
+            @total = @total - @all_transactions.pop
         end
     end
 
