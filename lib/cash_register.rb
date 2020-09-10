@@ -36,6 +36,7 @@ class CashRegister
  
 
  def void_last_transaction
+     
         if @items == @items.empty?
             @total = @total - self.total
         else
