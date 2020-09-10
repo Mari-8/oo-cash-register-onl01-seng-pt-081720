@@ -18,7 +18,8 @@ class CashRegister
     @items << title 
     i -= 1
     end
-    
+   @last_transaction = price
+   binding.pry
   end 
   
   def apply_discount 
