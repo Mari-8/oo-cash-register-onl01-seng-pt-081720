@@ -12,7 +12,6 @@ class CashRegister
   def add_item(title, price) 
     @total + price 
     @items = @items[title => price]
-    binding.pry
   end 
   
 end
