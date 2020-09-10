@@ -38,13 +38,13 @@ class CashRegister
  def void_last_transaction
    @total = @total - @all_transactions[1]
    @total
-   if @items = []
-     0.0 
-   else 
-     @total 
-   end
+    if @items = []
+      0.0 
+     else 
+      @total 
+     end
    binding.pry
-end 
+ end 
 
 
 
