@@ -16,8 +16,7 @@ class CashRegister
   end 
   
   def apply_discount 
-     floated = @discount.to_f
-     floated.split("")
+     discounted = @total - (@total * @discount / 100)
      
      binding.pry
   end 
