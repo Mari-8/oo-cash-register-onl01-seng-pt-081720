@@ -35,15 +35,14 @@ class CashRegister
  end 
  
 
- def void_last_transaction
-     @items.delete(@items[-1])
-        if @items == @items.empty?
-            @total = @total - self.total
+  def void_last_transaction
+        @items.pop
+        if @items.empty?
+            @total = 0.0
         else
-            @total = @total - @all_transactions.pop
+           @total = @total - @last_transaction
         end
     end
-
 
 
 end
