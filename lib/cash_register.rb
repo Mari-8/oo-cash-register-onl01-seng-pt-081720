@@ -37,7 +37,7 @@ class CashRegister
  
 
  def void_last_transaction
-   last_transaction = @alll_transactions.pop
+   last_transaction = @all_transactions.pop
    @total = @total - last_transaction
    @total
 end 
