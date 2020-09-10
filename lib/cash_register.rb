@@ -40,6 +40,7 @@ class CashRegister
    @items.pop
    if self == 0 
      0.0
+   end
  end
   
 end
