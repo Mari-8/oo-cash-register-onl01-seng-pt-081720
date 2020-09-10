@@ -41,6 +41,7 @@ class CashRegister
    if @total < 0 
      self.total = 0.0 
    end
+   @total
   end
   
 end
