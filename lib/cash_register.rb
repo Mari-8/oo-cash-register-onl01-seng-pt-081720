@@ -40,6 +40,8 @@ class CashRegister
    @total = @total - @last_transaction
    if items = [] 
      @total = 0.0
+   else 
+     self.total 
   end
   @total
 end 
