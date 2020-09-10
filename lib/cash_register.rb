@@ -39,6 +39,7 @@ class CashRegister
    
         if @items.empty?
             @total = @total - self.total
+            binding.pry
         else
             @total = @total - @all_transactions.pop
         end
