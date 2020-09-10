@@ -17,7 +17,7 @@ class CashRegister
   
   def apply_discount 
      floated = @discount.to_f
-     floated.pop
+     floated.length-2
      binding.pry
   end 
   
